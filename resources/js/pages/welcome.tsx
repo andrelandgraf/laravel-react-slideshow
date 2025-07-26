@@ -22,7 +22,7 @@ const slides = [
     },
     {
         id: 3,
-        title: "CodeGen is coming — even to Laravel",
+        title: "New tool to learn: CodeGen",
         type: "bullet-list",
         content: [
             {
@@ -46,7 +46,7 @@ const slides = [
         content: [
             {
                 category: "Primitives",
-                items: ["branches", "restore points", "instant reset"]
+                items: ["branches", "checkpoints", "instant restore"]
             },
             {
                 category: "Used by",
@@ -54,14 +54,14 @@ const slides = [
             },
             {
                 category: "app.build",
-                items: ["public demo + research project"],
+                items: ["open source demo + research project"],
                 highlight: true
             }
         ] as BulletGroup[]
     },
     {
         id: 5,
-        title: "`npx @app.build/cli --template=laravel`",
+        title: "npx @app.build/cli --template=laravel",
         type: "command"
     }
 ];
@@ -192,9 +192,6 @@ export default function Welcome() {
                         <h1 className="text-2xl sm:text-3xl lg:text-5xl font-mono font-bold bg-gray-100 p-4 sm:p-8 rounded-lg border-l-4 border-[#f53003] break-all sm:break-normal">
                             {slide.title}
                         </h1>
-                        <p className="text-lg sm:text-xl lg:text-2xl mt-4 sm:mt-8 text-gray-600">
-                            Get started with Laravel + AI
-                        </p>
                     </div>
                 );
 
