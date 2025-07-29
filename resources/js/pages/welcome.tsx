@@ -131,7 +131,7 @@ export default function Welcome() {
             case 'title':
                 return (
                     <div className="text-center px-4">
-                        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight max-w-2xl mx-auto">
+                        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight max-w-[60vw] mx-auto">
                             {slide.title.split(slide.emphasize!).map((part, index) => (
                                 <React.Fragment key={index}>
                                     {part}
